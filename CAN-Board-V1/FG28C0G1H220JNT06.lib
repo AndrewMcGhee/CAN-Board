@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# FG28C0G1H220JNT06
+#
+DEF FG28C0G1H220JNT06 C 0 40 Y N 1 L N
+F0 "C" 0 150 50 H V L BNN
+F1 "FG28C0G1H220JNT06" 0 -200 50 H V L BNN
+F2 "CAPRB500W50L400T250H550" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "" 0 0 50 H I L BNN "DigiKey_Part_Number"
+F5 "TDK" 0 0 50 H I L BNN "MF"
+F6 "0.0 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "RADIAL-2 TDK" 0 0 50 H I L BNN "Package"
+F8 "https://www.snapeda.com/parts/FG28C0G1H220JNT06/TDK/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F9 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
+F10 "20200310" 0 0 50 H I L BNN "PARTREV"
+F11 "https://www.snapeda.com/parts/FG28C0G1H220JNT06/TDK/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "FG28C0G1H220JNT06" 0 0 50 H I L BNN "MP"
+F13 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1767883&manufacturer=TDK&part_name=FG28C0G1H220JNT06&search_term=None" 0 0 50 H I L BNN "Purchase-URL"
+F14 "\n22 pF ±5% 50V Ceramic Capacitor C0G, NP0 Radial\n" 0 0 50 H I L BNN "Description"
+F15 "TDK" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+S 0 -75 25 75 0 0 0 F
+S 75 -75 100 75 0 0 0 F
+X ~ 1 -100 0 100 R 40 40 0 0 P 
+X ~ 2 200 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

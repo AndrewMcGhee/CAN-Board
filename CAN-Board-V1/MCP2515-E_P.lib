@@ -1,0 +1,51 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MCP2515-E_P
+#
+DEF MCP2515-E_P U 0 40 Y Y 1 L N
+F0 "U" -202 798 50 H V L BNN
+F1 "MCP2515-E_P" -206 -1173 50 H V L BNN
+F2 "DIP254P762X432-18" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Microchip" 0 0 50 H I L BNN "MF"
+F5 "CAN CONTRL" 0 0 50 H I L BNN "DESCRIPTION"
+F6 "PDIP-18" 0 0 50 H I L BNN "PACKAGE"
+F7 "MCP2515-E/P" 0 0 50 H I L BNN "MPN"
+F8 "None" 0 0 50 H I L BNN "Price"
+F9 "DIP-18 Microchip" 0 0 50 H I L BNN "Package"
+F10 "https://www.snapeda.com/parts/MCP2515-E/P/Microchip/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F11 "1439391" 0 0 50 H I L BNN "OC_FARNELL"
+F12 "https://www.snapeda.com/parts/MCP2515-E/P/Microchip/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F13 "MCP2515-E/P" 0 0 50 H I L BNN "MP"
+F14 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=562762&manufacturer=Microchip&part_name=MCP2515-E/P&search_term=None" 0 0 50 H I L BNN "Purchase-URL"
+F15 "MICROCHIP" 0 0 50 H I L BNN "SUPPLIER"
+F16 "61K2945" 0 0 50 H I L BNN "OC_NEWARK"
+F17 "In Stock" 0 0 50 H I L BNN "Availability"
+F18 "\nCAN controller w/ SPI interface, 125 deg C18 PDIP .300in TUBE | Microchip Technology Inc. MCP2515-E/P\n" 0 0 50 H I L BNN "Description"
+DRAW
+S -800 -1000 800 700 0 0 16 f
+X VDD 18 -1000 500 200 R 40 40 0 0 W 
+X RXCAN 2 -1000 300 200 R 40 40 0 0 I 
+X ~TX0RTS 4 -1000 200 200 R 40 40 0 0 I 
+X ~TX1RTS 5 -1000 100 200 R 40 40 0 0 I 
+X ~TX2RTS 6 -1000 0 200 R 40 40 0 0 I 
+X OSC1 8 -1000 -200 200 R 40 40 0 0 I 
+X SCK 13 -1000 -300 200 R 40 40 0 0 I 
+X SI 14 -1000 -400 200 R 40 40 0 0 I 
+X ~CS 16 -1000 -500 200 R 40 40 0 0 I 
+X ~RESET 17 -1000 -600 200 R 40 40 0 0 I 
+X VSS 9 -1000 -800 200 R 40 40 0 0 W 
+X TXCAN 1 1000 500 200 L 40 40 0 0 O 
+X CLKOUT/SOF 3 1000 400 200 L 40 40 0 0 O 
+X OSC2 7 1000 300 200 L 40 40 0 0 O 
+X ~RX1BF 10 1000 100 200 L 40 40 0 0 O 
+X ~RX0BF 11 1000 0 200 L 40 40 0 0 O 
+X ~INT 12 1000 -200 200 L 40 40 0 0 O 
+X SO 15 1000 -300 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library

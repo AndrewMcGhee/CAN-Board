@@ -1,0 +1,433 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:MCP2551-I-P U1
+U 1 1 652D802D
+P 3750 3400
+F 0 "U1" H 3750 3981 50  0000 C CNN
+F 1 "MCP2551-I-P" H 3750 3890 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3750 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 652DB300
+P 1600 2350
+F 0 "Y1" H 1600 2618 50  0000 C CNN
+F 1 "8Mhz" H 1600 2527 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1600 2350 50  0001 C CNN
+F 3 "~" H 1600 2350 50  0001 C CNN
+	1    1600 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 652F1922
+P 1300 2200
+F 0 "C1" V 1529 2200 50  0000 C CNN
+F 1 "22uF" V 1438 2200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1300 2200 50  0001 C CNN
+F 3 "~" H 1300 2200 50  0001 C CNN
+	1    1300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 652F22AA
+P 1300 2500
+F 0 "C2" V 1529 2500 50  0000 C CNN
+F 1 "22uF" V 1438 2500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1300 2500 50  0001 C CNN
+F 3 "~" H 1300 2500 50  0001 C CNN
+	1    1300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 652F7E66
+P 1050 2350
+F 0 "#PWR0101" H 1050 2100 50  0001 C CNN
+F 1 "Earth" H 1050 2200 50  0001 C CNN
+F 2 "" H 1050 2350 50  0001 C CNN
+F 3 "~" H 1050 2350 50  0001 C CNN
+	1    1050 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 2200 1050 2350
+Wire Wire Line
+	1200 2200 1050 2200
+Wire Wire Line
+	1050 2350 1050 2500
+Wire Wire Line
+	1050 2500 1200 2500
+Connection ~ 1050 2350
+Wire Wire Line
+	1400 2500 1600 2500
+Wire Wire Line
+	1400 2200 1600 2200
+Wire Wire Line
+	1600 2200 2450 2200
+Wire Wire Line
+	2450 2200 2450 2250
+Wire Wire Line
+	2450 2250 2600 2250
+Connection ~ 1600 2200
+Wire Wire Line
+	1600 2500 2450 2500
+Wire Wire Line
+	2450 2500 2450 2350
+Wire Wire Line
+	2450 2350 2600 2350
+Connection ~ 1600 2500
+$Comp
+L power:Earth #PWR0102
+U 1 1 652F9737
+P 2550 2600
+F 0 "#PWR0102" H 2550 2350 50  0001 C CNN
+F 1 "Earth" H 2550 2450 50  0001 C CNN
+F 2 "" H 2550 2600 50  0001 C CNN
+F 3 "~" H 2550 2600 50  0001 C CNN
+	1    2550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2600 2550 2450
+Wire Wire Line
+	2550 2450 2600 2450
+$Comp
+L Device:R_Small R1
+U 1 1 652FBC0D
+P 5900 1750
+F 0 "R1" V 5704 1750 50  0000 C CNN
+F 1 "10k" V 5795 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5900 1750 50  0001 C CNN
+F 3 "~" H 5900 1750 50  0001 C CNN
+	1    5900 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1750 5800 1750
+Wire Wire Line
+	6000 1750 6100 1750
+Wire Wire Line
+	6100 1750 6100 1650
+Wire Wire Line
+	5600 1650 6100 1650
+Connection ~ 6100 1650
+Wire Wire Line
+	6100 1650 6100 1500
+Wire Wire Line
+	2600 1750 2200 1750
+Wire Wire Line
+	2600 1650 2150 1650
+Wire Wire Line
+	2150 1650 2150 3200
+Wire Wire Line
+	2150 3200 3250 3200
+Wire Wire Line
+	2200 3300 3250 3300
+Wire Wire Line
+	2200 1750 2200 3300
+$Comp
+L power:Earth #PWR0104
+U 1 1 65307CDC
+P 3500 3900
+F 0 "#PWR0104" H 3500 3650 50  0001 C CNN
+F 1 "Earth" H 3500 3750 50  0001 C CNN
+F 2 "" H 3500 3900 50  0001 C CNN
+F 3 "~" H 3500 3900 50  0001 C CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3900 3750 3800
+$Comp
+L Device:R_Small R2
+U 1 1 65308A71
+P 3000 3600
+F 0 "R2" V 2804 3600 50  0000 C CNN
+F 1 "10k" V 2895 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3000 3600 50  0001 C CNN
+F 3 "~" H 3000 3600 50  0001 C CNN
+	1    3000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0105
+U 1 1 653097DC
+P 2650 3600
+F 0 "#PWR0105" H 2650 3350 50  0001 C CNN
+F 1 "Earth" H 2650 3450 50  0001 C CNN
+F 2 "" H 2650 3600 50  0001 C CNN
+F 3 "~" H 2650 3600 50  0001 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3600 2900 3600
+Wire Wire Line
+	3100 3600 3250 3600
+Text GLabel 4250 3300 2    50   Input ~ 0
+CANH
+Text GLabel 4250 3500 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	3500 3900 3750 3900
+Wire Wire Line
+	4300 3000 3750 3000
+$Comp
+L power:VCC #PWR0107
+U 1 1 65313428
+P 1150 3400
+F 0 "#PWR0107" H 1150 3250 50  0001 C CNN
+F 1 "VCC" H 1165 3573 50  0000 C CNN
+F 2 "" H 1150 3400 50  0001 C CNN
+F 3 "" H 1150 3400 50  0001 C CNN
+	1    1150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 65313E14
+P 1150 3700
+F 0 "C4" H 1242 3746 50  0000 L CNN
+F 1 "0.1uF" H 1242 3655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1150 3700 50  0001 C CNN
+F 3 "~" H 1150 3700 50  0001 C CNN
+	1    1150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 653146B7
+P 1450 3700
+F 0 "C5" H 1542 3746 50  0000 L CNN
+F 1 ".1uF" H 1542 3655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1450 3700 50  0001 C CNN
+F 3 "~" H 1450 3700 50  0001 C CNN
+	1    1450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C3
+U 1 1 65315022
+P 850 3700
+F 0 "C3" H 938 3746 50  0000 L CNN
+F 1 "CP_Small" H 938 3655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 850 3700 50  0001 C CNN
+F 3 "~" H 850 3700 50  0001 C CNN
+	1    850  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 65315844
+P 1800 3700
+F 0 "D1" V 1846 3630 50  0000 R CNN
+F 1 "LED_Small" V 1755 3630 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" V 1800 3700 50  0001 C CNN
+F 3 "~" V 1800 3700 50  0001 C CNN
+	1    1800 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  3600 850  3400
+Wire Wire Line
+	850  3400 1150 3400
+Wire Wire Line
+	1150 3400 1150 3600
+Connection ~ 1150 3400
+Wire Wire Line
+	1450 3400 1450 3600
+Wire Wire Line
+	1800 3800 1800 4000
+Wire Wire Line
+	1800 4000 1450 4000
+Wire Wire Line
+	850  4000 850  3800
+Wire Wire Line
+	1150 3800 1150 4000
+Connection ~ 1150 4000
+Wire Wire Line
+	1150 4000 850  4000
+Wire Wire Line
+	1450 3800 1450 4000
+Connection ~ 1450 4000
+Wire Wire Line
+	1450 4000 1300 4000
+$Comp
+L Device:R_Small R3
+U 1 1 6531D107
+P 1650 3400
+F 0 "R3" V 1454 3400 50  0000 C CNN
+F 1 "500k" V 1545 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1650 3400 50  0001 C CNN
+F 3 "~" H 1650 3400 50  0001 C CNN
+	1    1650 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 3400 1800 3400
+Wire Wire Line
+	1150 3400 1550 3400
+Wire Wire Line
+	1800 3600 1800 3400
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 65368684
+P 6800 1950
+F 0 "J1" H 6772 1882 50  0000 R CNN
+F 1 "Conn_01x07_Male" H 6772 1973 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x07_P1.27mm_Vertical" H 6800 1950 50  0001 C CNN
+F 3 "~" H 6800 1950 50  0001 C CNN
+	1    6800 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L 2023-10-16_18-34-33:MCP2515-I_P U2
+U 1 1 652D9E85
+P 2600 1650
+F 0 "U2" H 4100 2143 60  0000 C CNN
+F 1 "MCP2515-I_P" H 4100 2037 60  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 4100 1931 60  0000 C CNN
+F 3 "" H 2600 1650 60  0000 C CNN
+	1    2600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1850 6600 1850
+Wire Wire Line
+	5600 1950 6600 1950
+Wire Wire Line
+	5600 2050 6600 2050
+Wire Wire Line
+	5600 2250 6600 2250
+Wire Wire Line
+	5600 2150 6600 2150
+$Comp
+L power:Earth #PWR0103
+U 1 1 65374F80
+P 6250 1700
+F 0 "#PWR0103" H 6250 1450 50  0001 C CNN
+F 1 "Earth" H 6250 1550 50  0001 C CNN
+F 2 "" H 6250 1700 50  0001 C CNN
+F 3 "~" H 6250 1700 50  0001 C CNN
+	1    6250 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1750 6250 1750
+Wire Wire Line
+	6250 1700 6250 1750
+$Comp
+L power:VCC #PWR0108
+U 1 1 65379701
+P 6450 1500
+F 0 "#PWR0108" H 6450 1350 50  0001 C CNN
+F 1 "VCC" H 6465 1673 50  0000 C CNN
+F 2 "" H 6450 1500 50  0001 C CNN
+F 3 "" H 6450 1500 50  0001 C CNN
+	1    6450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1500 6450 1650
+Wire Wire Line
+	6450 1650 6600 1650
+$Comp
+L power:VCC #PWR0109
+U 1 1 6537B066
+P 6100 1500
+F 0 "#PWR0109" H 6100 1350 50  0001 C CNN
+F 1 "VCC" H 6115 1673 50  0000 C CNN
+F 2 "" H 6100 1500 50  0001 C CNN
+F 3 "" H 6100 1500 50  0001 C CNN
+	1    6100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 6538624F
+P 4300 3000
+F 0 "#PWR0106" H 4300 2850 50  0001 C CNN
+F 1 "VCC" H 4315 3173 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0110
+U 1 1 653A6A0B
+P 1300 4000
+F 0 "#PWR0110" H 1300 3750 50  0001 C CNN
+F 1 "Earth" H 1300 3850 50  0001 C CNN
+F 2 "" H 1300 4000 50  0001 C CNN
+F 3 "~" H 1300 4000 50  0001 C CNN
+	1    1300 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 4000
+Wire Wire Line
+	1300 4000 1150 4000
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 653AE7CE
+P 1850 4300
+F 0 "H1" H 1950 4346 50  0000 L CNN
+F 1 "MountingHole" H 1950 4255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1850 4300 50  0001 C CNN
+F 3 "~" H 1850 4300 50  0001 C CNN
+	1    1850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 653AF311
+P 2100 4300
+F 0 "H2" H 2200 4346 50  0000 L CNN
+F 1 "MountingHole" H 2200 4255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2100 4300 50  0001 C CNN
+F 3 "~" H 2100 4300 50  0001 C CNN
+	1    2100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 653AFFE4
+P 2350 4300
+F 0 "H3" H 2450 4346 50  0000 L CNN
+F 1 "MountingHole" H 2450 4255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2350 4300 50  0001 C CNN
+F 3 "~" H 2350 4300 50  0001 C CNN
+	1    2350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 653B0EED
+P 2600 4300
+F 0 "H4" H 2700 4346 50  0000 L CNN
+F 1 "MountingHole" H 2700 4255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2600 4300 50  0001 C CNN
+F 3 "~" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
