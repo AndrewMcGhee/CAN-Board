@@ -1,0 +1,16 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"U1";"DIP-8_W7.62mm_Socket";1;"MCP2551-I-P";;;
+2;"U2";"DIP-18_W7.62mm_Socket";1;"MCP2515-I_P";;;
+3;"Y1";"Crystal_HC49-4H_Vertical";1;"8Mhz";;;
+4;"C1,C2";"C_Disc_D5.0mm_W2.5mm_P2.50mm";2;"22uF";;;
+5;"R1,R2";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";2;"10k";;;
+6;"R3";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"500k";;;
+7;"J1";"PinHeader_1x07_P1.27mm_Vertical";1;"Conn_01x07_Male";;;
+8;"D1";"LED_D5.0mm";1;"LED_Small";;;
+9;"H1,H2,H3,H4";"MountingHole_3.2mm_M3";4;"MountingHole";;;
+10;"C3";"C_Disc_D5.0mm_W2.5mm_P2.50mm";1;"CP_Small";;;
+11;"C4";"C_Disc_D5.0mm_W2.5mm_P2.50mm";1;"0.1uF";;;
+12;"C5";"C_Disc_D5.0mm_W2.5mm_P2.50mm";1;".1uF";;;
+13;"J2,J3,J4";"TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal";3;"Screw_Terminal_01x02";;;
+14;"R4";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"120";;;
+15;"G***";"Amog2";1;"LOGO";;;

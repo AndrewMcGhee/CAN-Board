@@ -254,8 +254,6 @@ Wire Wire Line
 	1150 3400 1150 3600
 Connection ~ 1150 3400
 Wire Wire Line
-	1450 3400 1450 3600
-Wire Wire Line
 	1800 3800 1800 4000
 Wire Wire Line
 	1800 4000 1450 4000
@@ -284,8 +282,6 @@ F 3 "~" H 1650 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 3400 1800 3400
-Wire Wire Line
-	1150 3400 1550 3400
 Wire Wire Line
 	1800 3600 1800 3400
 $Comp
@@ -428,6 +424,85 @@ F 1 "MountingHole" H 2700 4255 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 2600 4300 50  0001 C CNN
 F 3 "~" H 2600 4300 50  0001 C CNN
 	1    2600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3400 1450 3400
+Wire Wire Line
+	1450 3600 1450 3400
+Connection ~ 1450 3400
+Wire Wire Line
+	1450 3400 1550 3400
+Text GLabel 5750 3350 0    50   Input ~ 0
+CANH
+Text GLabel 5750 3450 0    50   Input ~ 0
+CANL
+Wire Wire Line
+	5750 3350 5850 3350
+Wire Wire Line
+	5750 3450 6000 3450
+$Comp
+L Device:R_Small R4
+U 1 1 653F6A07
+P 5850 3250
+F 0 "R4" H 5791 3204 50  0000 R CNN
+F 1 "120" H 5791 3295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5850 3250 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	-1   0    0    1   
+$EndComp
+Connection ~ 5850 3350
+Wire Wire Line
+	5850 3150 6450 3150
+Wire Wire Line
+	5850 3350 5850 3550
+Wire Wire Line
+	5850 3550 6450 3550
+Wire Wire Line
+	5850 3350 6450 3350
+Wire Wire Line
+	6000 3450 6000 3250
+Wire Wire Line
+	6000 3250 6450 3250
+Connection ~ 6000 3450
+Wire Wire Line
+	6000 3450 6450 3450
+Wire Wire Line
+	6000 3450 6000 3650
+Wire Wire Line
+	6000 3650 6450 3650
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 654000DB
+P 6650 3150
+F 0 "J2" H 6730 3142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6730 3051 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 6650 3150 50  0001 C CNN
+F 3 "~" H 6650 3150 50  0001 C CNN
+	1    6650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 65403B21
+P 6650 3350
+F 0 "J3" H 6730 3342 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6730 3251 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 6650 3350 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 6540521B
+P 6650 3550
+F 0 "J4" H 6730 3542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6730 3451 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 6650 3550 50  0001 C CNN
+F 3 "~" H 6650 3550 50  0001 C CNN
+	1    6650 3550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
