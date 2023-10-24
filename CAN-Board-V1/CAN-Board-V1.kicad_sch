@@ -1606,7 +1606,7 @@
     (property "Reference" "R3" (at 41.91 81.3816 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "500k" (at 41.91 83.693 90)
+    (property "Value" "500" (at 41.91 83.693 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 41.91 86.36 0)
