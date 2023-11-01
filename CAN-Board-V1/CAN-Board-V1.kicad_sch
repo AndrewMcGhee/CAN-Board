@@ -1635,7 +1635,7 @@
     (property "Value" "Conn_01x07_Male" (at 173.4312 50.1142 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x07_P1.27mm_Vertical" (at 172.72 49.53 0)
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x07_P2.00mm_Vertical" (at 172.72 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 49.53 0)
